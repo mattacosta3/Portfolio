@@ -12,7 +12,7 @@
 
   <title>Homepage</title>
 
-  <meta property="og:title" content="Homepage" />
+  <meta property="og:title" content="Web Developer" />
 
   <meta property="og:locale" content="en_US" />
 
@@ -23,31 +23,30 @@
 
   <meta
     property="og:url"
-    content="//"
+    content="https://matthewacostaportfolio.com/"
   />
 
   <meta
     name="description"
-    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content="Matthew Acosta's Portfolio"
   />
 
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="icon" type="image/jpg" href="/assets/img/blog-author.jpg" />
 
   <meta name="theme-color" content="#5540af" />
 
-  <meta property="og:site_name" content="Atom Template" />
+  <meta property="og:site_name" content="Matthew Acosta's Portfolio"/>
 
-  <meta property="og:image" content="//assets/img/social.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:site" content="@tailwindmade" />
+  <meta property="og:image" content="https://matthewacostaportfolio.com/assets/img/blog-author.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
 
   <link
     crossorigin="crossorigin"
     href="https://fonts.gstatic.com"
     rel="preconnect"
   />
+
+    <link rel="preload" as="font">
 
   <link
     as="style"
@@ -85,7 +84,25 @@
     html {
         scroll-behavior: smooth;
     }
-</style>
+
+    @keyframes drawOutline {
+      0% {
+        border: 5px solid transparent; /* Start with a transparent border */
+        width: 0; /* Start with a width of 0 */
+      }
+      100% {
+        border: 5px solid blue; /* End with a solid blue border */
+        width: min-content; /* End with full width */
+      }
+    }
+
+    .border-in-motion {
+      animation: drawOutline 1s ease-in-out forwards; /* Apply the animation with a duration of 1 second */
+      /* You can customize the animation timing and other properties here */
+    }
+
+
+  </style>
 
   
 </head>
@@ -251,7 +268,7 @@
 </div>
       <div><div
   class="relative bg-cover bg-center bg-no-repeat py-8"
-  style="background-image: url(/assets/img/bg-hero.jpg)"
+  style="background-image: url(/assets/img/bg-hero.WebP)"
 >
   <div
     class="absolute inset-0 z-20 bg-gradient-to-tr from-blue-900 to-transparent bg-cover bg-center bg-no-repeat"
@@ -263,7 +280,7 @@
     <div class="flex flex-col items-center justify-center lg:flex-row">
       <div class="rounded-full border-8 border-primary shadow-xl">
         <img
-          src="/assets/img/blog-author.jpg"
+          src="/assets/img/blog-author.WebP"
           class="h-48 rounded-full sm:h-56"
           alt="author"
         />
@@ -294,9 +311,16 @@
               ></i>
             </a>
 
-            <a href="Matthew_Acosta_Resume.pdf" style="text-decoration: underline;"
-          class="font-bold font-header pl-4 text-2xl text-white hover:text-yellow">
-          Resume</a>
+            <a href="https://github.com/mattacosta311" class="pl-4">
+              <i
+                      class="bx bxl-github text-2xl text-white hover:text-yellow"
+              ></i>
+            </a>
+
+            <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
+               class="font-bold font-header pl-4 text-2xl text-white hover:text-yellow">
+              Resume
+            </a>
             
           </div>
         </div>
@@ -316,10 +340,10 @@
       <h4
         class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
       >
-        Web Developer & Eletrican
+        Web Developer
       </h4>
       <p class="pt-6 font-body leading-relaxed text-grey-20">
-        Web Developer with a years experience in PHP using Laravel. Strong understanding of object-oriented programming, MVC design patterns, and database design principles 
+        Web Developer with experience in PHP, Kotlin, and Python with a strong understanding of object-oriented programming, MVC design patterns, and database design principles
         
         Passionate for Engineering and efficient in delivering dynamic and scalable solutions independently or in highly collaborative projects.
       </p>
@@ -342,7 +366,14 @@
               class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
             ></i>
           </a>
-          <a href="Matthew_Acosta_Resume.pdf" style="text-decoration: underline;"
+
+          <a href="https://github.com/mattacosta311" class="pl-4">
+            <i
+                    class="bx bxl-github text-2xl text-primary hover:text-yellow"
+            ></i>
+          </a>
+
+          <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
           class="font-bold font-header pl-4 text-2xl text-primary hover:text-yellow">
           Resume
         </a>
@@ -350,48 +381,58 @@
         </div>
       </div>
     </div>
-    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+    <div class="w-full pl-0 pt-12 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
       <div>
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">
-            HTML & CSS
-          </h4>
-          <h3 class="font-body text-3xl font-bold text-primary">85%</h3>
+        <div class="flex font-body font-semibold uppercase text-primary text-3xl lg:mr-40 sm:center, justify-center">
+        Skills:
         </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 85%"></div>
-        </div>
-      </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">TailWindCSS</h4>
-          <h3 class="font-body text-3xl font-bold text-primary">70%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>
-        </div>
-      </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">
-            PHP
-          </h4>
-          <h3 class="font-body text-3xl font-bold text-primary">98%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 98%"></div>
+        <div class="flex items-end mt-2 grid-cols-4 sm:ml-5">
+          <ul class="w-full ml-5">
+            <li class="text-2xl text-primary font-semibold font-body">PHP</li>
+            <li class="text-2xl text-primary font-semibold font-body">LARAVEL</li>
+            <li class="text-2xl text-primary font-semibold font-body">KOTLIN</li>
+            <li class="text-2xl text-primary font-semibold font-body">GITHUB</li>
+            <li class="text-2xl text-primary font-semibold font-body">PYTHON</li>
+          </ul>
+          <ul class="w-full">
+
+            <li class="text-2xl text-primary font-semibold font-body">MYSQL</li>
+            <li class="text-2xl text-primary font-semibold font-body">TAILWINDCSS</li>
+            <li class="text-2xl text-primary font-semibold font-body">HTML</li>
+            <li class="text-2xl text-primary font-semibold font-body">CSS</li>
+            <li class="text-2xl text-primary font-semibold font-body">JAVASCIPT</li>
+          </ul>
         </div>
       </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">Laravel</h4>
-          <h3 class="font-body text-3xl font-bold text-primary">91%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>
+<!--      <div class="pt-6">-->
+<!--        <div class="flex items-end justify-between">-->
+<!--          <h4 class="font-body font-semibold uppercase text-black">TailWindCSS</h4>-->
+<!--          <h3 class="font-body text-3xl font-bold text-primary">70%</h3>-->
+<!--        </div>-->
+<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
+<!--          <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="pt-6">-->
+<!--        <div class="flex items-end justify-between">-->
+<!--          <h4 class="font-body font-semibold uppercase text-black">-->
+<!--            PHP-->
+<!--          </h4>-->
+<!--          <h3 class="font-body text-3xl font-bold text-primary">98%</h3>-->
+<!--        </div>-->
+<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
+<!--          <div class="h-3 rounded-full bg-primary" style="width: 98%"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="pt-6">-->
+<!--        <div class="flex items-end justify-between">-->
+<!--          <h4 class="font-body font-semibold uppercase text-black">Laravel</h4>-->
+<!--          <h3 class="font-body text-3xl font-bold text-primary">91%</h3>-->
+<!--        </div>-->
+<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
+<!--          <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>-->
         </div>
       </div>
-    </div>
   </div>
 </div>
 
@@ -462,7 +503,7 @@
         </p>
       </div>
     </div>
-  
+
     <div class="group rounded px-8 py-12 shadow hover:bg-primary">
       <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block">
