@@ -1,124 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
 
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
 
-  <meta
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    name="viewport"
-  />
+    <meta
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+    />
 
-  <title>Homepage</title>
+    <title>Homepage</title>
 
-  <meta property="og:title" content="Web Developer" />
+    <meta property="og:title" content="Web Developer"/>
 
-  <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_US"/>
 
-  <link
-    rel="canonical"
-    href="//"
-  />
+    <link
+            rel="canonical"
+            href="//"
+    />
 
-  <meta
-    property="og:url"
-    content="https://matthewacostaportfolio.com/"
-  />
+    <meta
+            property="og:url"
+            content="https://matthewacostaportfolio.com/"
+    />
 
-  <meta
-    name="description"
-    content="Matthew Acosta's Portfolio"
-  />
+    <meta
+            name="description"
+            content="Matthew Acosta's Portfolio"
+    />
 
-  <link rel="icon" type="image/jpg" href="/assets/img/blog-author.jpg" />
+    <link rel="icon" type="image/jpg" href="/assets/img/blog-author.jpg"/>
 
-  <meta name="theme-color" content="#5540af" />
+    <meta name="theme-color" content="#5540af"/>
 
-  <meta property="og:site_name" content="Matthew Acosta's Portfolio"/>
+    <meta property="og:site_name" content="Matthew Acosta's Portfolio"/>
 
-  <meta property="og:image" content="https://matthewacostaportfolio.com/assets/img/blog-author.jpg" />
-  <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image" content="https://matthewacostaportfolio.com/assets/img/blog-author.jpg"/>
+    <meta property="og:image:type" content="image/jpg"/>
 
-  <link
-    crossorigin="crossorigin"
-    href="https://fonts.gstatic.com"
-    rel="preconnect"
-  />
+    <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+    />
 
     <link rel="preload" as="font">
 
-  <link
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="preload"
-  />
+    <link
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+            rel="preload"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
 
-  <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+    <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+    />
 
-  <link
-    crossorigin="anonymous"
-    href="/assets/styles/main.min.css"
-    media="screen"
-    rel="stylesheet"
-  />
-  
-  <script
-    defer
-    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-  ></script>
+    <link
+            crossorigin="anonymous"
+            href="/assets/styles/main.min.css"
+            media="screen"
+            rel="stylesheet"
+    />
 
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
+    <script
+            defer
+            src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+    ></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-  <style>
-    html {
-        scroll-behavior: smooth;
-    }
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-     indicators = activeClasses:"bg-grey dark:bg-gray-800"}
+        indicators
 
-    @keyframes drawOutline {
-      0% {
-        border: 5px solid transparent; /* Start with a transparent border */
-        width: 0; /* Start with a width of 0 */
-      }
-      100% {
-        border: 5px solid blue; /* End with a solid blue border */
-        width: min-content; /* End with full width */
-      }
-    }
+        =
+        activeClasses:
 
-    .border-in-motion {
-      animation: drawOutline 1s ease-in-out forwards; /* Apply the animation with a duration of 1 second */
-      /* You can customize the animation timing and other properties here */
-    }
+        "bg-grey dark:bg-gray-800"
+        }
+
+        @keyframes drawOutline {
+            0% {
+                border: 5px solid transparent; /* Start with a transparent border */
+                width: 0; /* Start with a width of 0 */
+            }
+            100% {
+                border: 5px solid blue; /* End with a solid blue border */
+                width: min-content; /* End with full width */
+            }
+        }
+
+        .border-in-motion {
+            animation: drawOutline 1s ease-in-out forwards; /* Apply the animation with a duration of 1 second */
+            /* You can customize the animation timing and other properties here */
+        }
 
 
-  </style>
+    </style>
 
-  
+
 </head>
 
 
-  <body
-    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-    class="relative"
-    x-data="{ mobileMenu: false }"
-  >
-    
-    <div id="main" class="relative">
-      <div
-  x-data="{
+<body
+        :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+        class="relative"
+        x-data="{ mobileMenu: false }"
+>
+
+<div id="main" class="relative">
+    <div
+            x-data="{
     triggerNavItem(id) {
         $scroll(id)
     },
@@ -127,562 +133,874 @@
         this.triggerNavItem(id);
     }
 }"
->
-  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
-  ">
-    <div class="hidden lg:block">
-      <ul class="flex items-center justify-center">
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#about')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
-            >About</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#services')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
-            >Services</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#portfolio')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
-            >Portfolio</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <!-- <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#clients')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Testimonials</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li> -->
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#contact')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
-            >Contact</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-      </ul>
-    </div>
-    <div class="block lg:hidden" style="position: absolute; right: 0;">
-      <button @click="mobileMenu = true">
-        <i class="font-bold text-5xl bx bx-menu text-4xl text-white"></i>
-      </button>
-    </div>
-  </div>
-
-
-<div
-  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
-  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
->
-  <div
-    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
-  >
-    <button
-      class="absolute top-0 right-0 mt-4 mr-4"
-      @click="mobileMenu = false"
     >
-      <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
-    </button>
+        <div class="w-full z-50 top-0 py-3 sm:py-1  absolute
+  ">
+            <div class="hidden lg:block">
+                <ul class="flex items-center justify-center hover:bg-opacity-90">
 
-    <ul class="mt-8 flex flex-col">
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#about')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+                    <li class="group pl-6">
+          
+          <span
+                  @click="triggerNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
           >About</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#services')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+          >
+
+                        <span
+                                class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ></span>
+                    </li>
+
+                    <li class="group pl-6">
+          
+          <span
+                  @click="triggerNavItem('#services')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
           >Services</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#portfolio')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+          >
+
+                        <span
+                                class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ></span>
+                    </li>
+
+                    <li class="group pl-6">
+          
+          <span
+                  @click="triggerNavItem('#portfolio')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
           >Portfolio</span
+          >
+
+                        <span
+                                class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ></span>
+                    </li>
+
+                    <!-- <li class="group pl-6">
+
+                      <span
+                        @click="triggerNavItem('#clients')"
+                        class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                        >Testimonials</span
+                      >
+
+                      <span
+                        class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                      ></span>
+                    </li> -->
+
+                    <li class="group pl-6">
+          
+          <span
+                  @click="triggerNavItem('#contact')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+          >Contact</span
+          >
+
+                        <span
+                                class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ></span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="block lg:hidden" style="position: absolute; right: 0;">
+                <button @click="mobileMenu = true">
+                    <i class="font-bold text-5xl bx bx-menu text-4xl text-white"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div
+                class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+                :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
         >
-        
-      </li>
-      
-      <li class="py-2">
+            <div
+                    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+            >
+                <button
+                        class="absolute top-0 right-0 mt-4 mr-4"
+                        @click="mobileMenu = false"
+                >
+                    <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt=""/>
+                </button>
+
+                <ul class="mt-8 flex flex-col">
+
+                    <li class="py-2">
         
         <span
-          @click="triggerMobileNavItem('#contact')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
-          >Contact</span
+                @click="triggerMobileNavItem('#about')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+        >About</span
         >
-        
-      </li>
-      
-    </ul>
-  </div>
-</div>
-</div>
-      <div><div
-  class="relative bg-cover bg-center bg-no-repeat py-8"
-  style="background-image: url(/assets/img/bg-hero.WebP)"
->
-  <div
-    class="absolute inset-0 z-20 bg-gradient-to-tr from-blue-900 to-transparent bg-cover bg-center bg-no-repeat"
-  ></div>
 
-  <div
-    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
-  >
-    <div class="flex flex-col items-center justify-center lg:flex-row">
-      <div class="rounded-full border-8 border-primary shadow-xl">
-        <img
-          src="/assets/img/blog-author.WebP"
-          class="h-48 rounded-full sm:h-56"
-          alt="author"
-        />
-      </div>
-      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-        <h1
-          class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
+                    </li>
+
+                    <li class="py-2">
+        
+        <span
+                @click="triggerMobileNavItem('#services')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+        >Services</span
         >
-          Hello I'm Matthew Acosta!
-        </h1>
-        <div
-          class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
+
+                    </li>
+
+                    <li class="py-2">
+        
+        <span
+                @click="triggerMobileNavItem('#portfolio')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+        >Portfolio</span
         >
-          <div
-            class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
-          >
-            <a href="#contact" class="hover:text-yellow cursor-pointer font-body text-lg uppercase text-white">Let's connect</a>
-            <div class="hidden sm:block">
-              <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+
+                    </li>
+
+                    <li class="py-2">
+        
+        <span
+                @click="triggerMobileNavItem('#contact')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white text-xl"
+        >Contact</span
+        >
+
+                    </li>
+
+                </ul>
             </div>
-          </div>
-          <div
-            class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
-          >
-            <a href="//www.linkedin.com/in/mattacosta3" class="pl-4">
-              <i
-                class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-
-            <a href="https://github.com/mattacosta311" class="pl-4">
-              <i
-                      class="bx bxl-github text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-
-            <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
-               class="font-bold font-header pl-4 text-2xl text-white hover:text-yellow">
-              Resume
-            </a>
-            
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-
-<div class="bg-grey-50" id="about">
-  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
-    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-      <h2
-        class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-      >
-        About Me
-      </h2>
-      <h4
-        class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-      >
-        Web Developer
-      </h4>
-      <p class="pt-6 font-body leading-relaxed text-grey-20">
-        Web Developer with experience in PHP, Kotlin, and Python with a strong understanding of object-oriented programming, MVC design patterns, and database design principles
-        
-        Passionate for Engineering and efficient in delivering dynamic and scalable solutions independently or in highly collaborative projects.
-      </p>
-      <div
-        class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
-      >
-        <div class="flex items-center justify-center sm:justify-start">
-          <a href="#contact" class="hover:text-yellow font-body text-lg font-semibold uppercase text-grey-20">
-            Connect with me
-          </a>
-          <div class="hidden sm:block">
-            <i class="bx bx-chevron-right text-2xl text-primary"></i>
-          </div>
-        </div>
+    <div>
         <div
-          class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+                class="relative bg-cover bg-center bg-no-repeat py-8"
+                style="background-image: url(/assets/img/bg-hero.WebP)"
         >
-          <a href="//www.linkedin.com/in/mattacosta3" class="pl-4">
-            <i
-              class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
+            <div
+                    class="absolute inset-0 z-20 bg-gradient-to-tr from-blue-900 to-transparent bg-cover bg-center bg-no-repeat"
+            ></div>
 
-          <a href="https://github.com/mattacosta311" class="pl-4">
-            <i
-                    class="bx bxl-github text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
+            <div
+                    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
+            >
+                <div class="flex flex-col items-center justify-center lg:flex-row">
+                    <div class="rounded-full border-8 border-primary shadow-xl">
+                        <img
+                                src="/assets/img/blog-author.WebP"
+                                class="h-48 rounded-full sm:h-56"
+                                alt="author"
+                        />
+                    </div>
+                    <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                        <h1
+                                class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
+                        >
+                            Hello I'm Matthew Acosta!
+                        </h1>
+                        <div
+                                class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
+                        >
+                            <div
+                                    class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
+                            >
+                                <a href="#contact"
+                                   class="hover:text-yellow cursor-pointer font-body text-lg uppercase text-white">Let's
+                                    connect: <strong class="sm:hidden">Click Below</strong></a>
+                                <div class="hidden sm:block">
+                                    <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+                                </div>
+                            </div>
+                            <div
+                                    class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+                            >
+                                <a href="//www.linkedin.com/in/mattacosta3" class="pl-4">
+                                    <i
+                                            class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
+                                    ></i>
+                                </a>
 
-          <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
-          class="font-bold font-header pl-4 text-2xl text-primary hover:text-yellow">
-          Resume
-        </a>
+                                <a href="https://github.com/mattacosta311" class="pl-4">
+                                    <i
+                                            class="bx bxl-github text-2xl text-white hover:text-yellow"
+                                    ></i>
+                                </a>
 
+                                <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
+                                   class="font-bold font-header pl-4 text-2xl text-white hover:text-yellow">
+                                    Resume
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="bg-grey-50" id="about">
+            <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+                <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+                    <h2
+                            class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+                    >
+                        About Me
+                    </h2>
+                    <h4
+                            class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+                    >
+                        Web Developer
+                    </h4>
+                    <p class="pt-6 font-body leading-relaxed text-black text-lg">
+                        From static web pages to complete web applications. I am dedicated to <strong
+                            class="text-primary">exceeding customer expectations, Deadlines, </strong>and selecting the
+                        <strong class="text-primary">most suitable technologies</strong> to align with the unique needs
+                        of each project. Customization is not just my specialty—it's my passion.
+                    </p>
+                    <p class="pt-6 font-body leading-relaxed text-black text-lg">
+
+                        I understand that an effortless user experience is the cornerstone of any application, so I
+                        focus on building solid, user-friendly front ends using tools like Vue.js, paired with efficient
+                        and secure back-end systems. My goal is always to create websites that are appealing, load fast,
+                        and have clean, maintainable code on both ends, ensuring they're easy to use and reliable under
+                        the hood. </p>
+                    <div
+                            class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+                    >
+                        <div class="flex items-center justify-center sm:justify-start">
+                            <a href="#contact"
+                               class="hover:text-yellow font-body text-lg font-semibold uppercase text-grey-20">
+                                Connect with me
+                            </a>
+                            <div class="hidden sm:block">
+                                <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div
+                                class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+                        >
+                            <a href="//www.linkedin.com/in/mattacosta3" class="pl-4">
+                                <i
+                                        class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
+                                ></i>
+                            </a>
+
+                            <a href="https://github.com/mattacosta311" class="pl-4">
+                                <i
+                                        class="bx bxl-github text-2xl text-primary hover:text-yellow"
+                                ></i>
+                            </a>
+
+                            <a href="Matthew_Acosta_Resume.png" style="text-decoration: underline;"
+                               class="font-bold font-header pl-4 text-2xl text-primary hover:text-yellow">
+                                Resume
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full pl-0 pt-12 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+                    <div class="flex justify-center">
+                        <div class="font-body font-semibold uppercase text-primary text-3xl lg:mr-40">
+                            My Technologies:
+                        </div>
+                    </div>
+                    <ul role="list" class="divide-y divide-gray-100">
+                        <li class="flex justify-between gap-x-6 py-1 my-4">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl mb-1">Laravel</p>
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl mb-1">Vue.js</p>
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl mb-1">
+                                        TailwindCSS</p>
+
+                                </div>
+                            </div>
+                            <div class="shrink-0 sm:flex sm:flex-col sm:items-end">
+                                <a href="https://localeplates.com/"
+                                   class="text-sm leading-6 text-primary text-lg border-2 border-primary rounded-md p-2 hover:text-yellow hover:bg-primary">View
+                                    an Example</a>
+                            </div>
+                        </li>
+                        <li class="flex justify-between gap-x-6 py-1 mb-4">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl">Feature/Unit
+                                        Tests</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 sm:flex sm:flex-col sm:items-end">
+                                <a href="https://github.com/mattacosta311/stock-project"
+                                   class="text-sm leading-6 text-primary text-lg border-2 border-primary rounded-md p-2 hover:text-yellow hover:bg-primary">View
+                                    an Example</a>
+                            </div>
+                        </li>
+                        <li class="flex justify-between gap-x-6 py-1 mb-4">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl mb-1">MySQL Database
+                                        Designs</p>
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl mb-1">RESTful
+                                        APIs</p>
+
+                                </div>
+                            </div>
+                            <div class="shrink-0 sm:flex sm:flex-col sm:items-end">
+                                <a href="https://github.com/mattacosta311/laravel_laracast"
+                                   class="text-sm leading-6 text-primary text-lg border-2 border-primary rounded-md p-2 hover:text-yellow hover:bg-primary">View
+                                    an Example</a>
+                            </div>
+                        </li>
+                        <li class="flex justify-between gap-x-6 py-1 mb-4">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl">Git and GitHub for
+                                        version control</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 sm:flex sm:flex-col sm:items-end">
+                                <a href="https://github.com/mattacosta311/laravel_laracast"
+                                   class="text-sm leading-6 text-primary text-lg border-2 border-primary rounded-md p-2 hover:text-yellow hover:bg-primary">
+                                    <i class="bx bxl-github text-2xl text-primary hover:text-yellow"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex justify-between gap-x-6 py-1 mb-4">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900 text-xl">UX/UI Design</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-full pl-0 pt-12 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-      <div>
-        <div class="flex font-body font-semibold uppercase text-primary text-3xl lg:mr-40 sm:center, justify-center">
-        Skills:
-        </div>
-        <div class="flex items-end mt-2 grid-cols-4 sm:ml-5">
-          <ul class="w-full ml-5">
-            <li class="text-2xl text-primary font-semibold font-body">PHP</li>
-            <li class="text-2xl text-primary font-semibold font-body">LARAVEL</li>
-            <li class="text-2xl text-primary font-semibold font-body">KOTLIN</li>
-            <li class="text-2xl text-primary font-semibold font-body">GITHUB</li>
-            <li class="text-2xl text-primary font-semibold font-body">PYTHON</li>
-          </ul>
-          <ul class="w-full">
-
-            <li class="text-2xl text-primary font-semibold font-body">MYSQL</li>
-            <li class="text-2xl text-primary font-semibold font-body">TAILWINDCSS</li>
-            <li class="text-2xl text-primary font-semibold font-body">HTML</li>
-            <li class="text-2xl text-primary font-semibold font-body">CSS</li>
-            <li class="text-2xl text-primary font-semibold font-body">JAVASCIPT</li>
-          </ul>
-        </div>
-      </div>
-<!--      <div class="pt-6">-->
-<!--        <div class="flex items-end justify-between">-->
-<!--          <h4 class="font-body font-semibold uppercase text-black">TailWindCSS</h4>-->
-<!--          <h3 class="font-body text-3xl font-bold text-primary">70%</h3>-->
-<!--        </div>-->
-<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
-<!--          <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="pt-6">-->
-<!--        <div class="flex items-end justify-between">-->
-<!--          <h4 class="font-body font-semibold uppercase text-black">-->
-<!--            PHP-->
-<!--          </h4>-->
-<!--          <h3 class="font-body text-3xl font-bold text-primary">98%</h3>-->
-<!--        </div>-->
-<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
-<!--          <div class="h-3 rounded-full bg-primary" style="width: 98%"></div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="pt-6">-->
-<!--        <div class="flex items-end justify-between">-->
-<!--          <h4 class="font-body font-semibold uppercase text-black">Laravel</h4>-->
-<!--          <h3 class="font-body text-3xl font-bold text-primary">91%</h3>-->
-<!--        </div>-->
-<!--        <div class="mt-2 h-3 w-full rounded-full bg-lila">-->
-<!--          <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>-->
-        </div>
-      </div>
-  </div>
 </div>
 
 <div class="container py-16 md:py-20" id="services">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Here's what I'm good at
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    These are the services I offer
-  </h3>
+    <h2
+            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+    >
+        These are the services I offer
+    </h2>
 
-  <div
-    class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
-  >
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-development-white.svg"
-            alt="development icon"
-          />
+    <div
+            class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+    >
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                    <img
+                            src="/assets/img/icon-development-white.svg"
+                            alt="development icon"
+                    />
+                </div>
+                <div class="block group-hover:hidden">
+                    <img
+                            src="/assets/img/icon-development-black.svg"
+                            alt="development icon"
+                    />
+                </div>
+            </div>
+            <div class="text-center">
+                <h3
+                        class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                >
+                    WEB DEVELOPMENT
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    As a versatile Web Developer, my expertise spans both front-end and back-end development,
+                    encompassing technologies like Vue.js, Tailwind, JavaScript, CSS, and Laravel Blade. My proficiency
+                    in back-end development includes skills from authentication and database construction to integrating
+                    RESTful services, utilizing external APIs, and designing robust in-house APIs custom-fit to project
+                    needs. This comprehensive skill set makes me an invaluable asset for projects of any scale or scope,
+                    ensuring I can adapt and contribute effectively to a wide range of web development challenges and
+                    objectives. </p>
+            </div>
         </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-development-black.svg"
-            alt="development icon"
-          />
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                    <img
+                            src="assets/img/icon-content-black.svg"
+                            alt="Consulting icon"
+                    />
+                </div>
+                <div class="block group-hover:hidden">
+                    <img
+                            src="assets/img/icon-content-black.svg"
+                            alt="Consulting icon"
+                    />
+                </div>
+            </div>
+            <div class="text-center">
+                <h3
+                        class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                >
+                    Consulting Expertise in Web Development
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    As a seasoned web development consultant, I offer deep insights and strategic guidance to help
+                    businesses navigate the complex landscape of web technologies. My consulting services are geared
+                    towards empowering clients with the knowledge and tools they need to make informed decisions and
+                    achieve their digital goals. </p>
+            </div>
         </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          WEB DEVELOPMENT
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Skills in Front-end and Back-end Development, from authentication and building databases to styling responsive Web Applications.
-        </p>
-      </div>
-    </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-mobile-white.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-mobile-black.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Mobile Development
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Worked with Andriod Studios and Kotlin
-        </p>
-      </div>
-    </div>
 
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-graphics-white.svg"
-            alt="Graphic Design icon"
-          />
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                    <img
+                            src="/assets/img/icon-graphics-white.svg"
+                            alt="Graphic Design icon"
+                    />
+                </div>
+                <div class="block group-hover:hidden">
+                    <img
+                            src="/assets/img/icon-graphics-black.svg"
+                            alt="Graphic Design icon"
+                    />
+                </div>
+            </div>
+            <div class="text-center">
+                <h3
+                        class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                >
+                    UX/UI Design
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    With my specialization in UI/UX design that combines appealing visuals with ease of use, focusing on
+                    what users need and want. My goal is to make your digital products not only look good but also be
+                    straightforward and enjoyable to use, leaving your users with a positive impression.
+                </p>
+            </div>
         </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-graphics-black.svg"
-            alt="Graphic Design icon"
-          />
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                    <img
+                            src="/assets/img/icon-mobile-white.svg"
+                            alt="Mobile Application icon"
+                    />
+                </div>
+                <div class="block group-hover:hidden">
+                    <img
+                            src="/assets/img/icon-mobile-black.svg"
+                            alt="Mobile Application icon"
+                    />
+                </div>
+            </div>
+            <div class="text-center">
+                <h3
+                        class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                >
+                    Mobile Development
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    Proficiency in Kotlin, and with the powerful features of Android Studio, your ideas can be
+                    applications that are not only efficient and reliable but also visually appealing.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Web Design
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Designing layouts and efficient website navigations for a better user experience.
-        </p>
-      </div>
     </div>
-  </div>
 </div>
 
 <div class="container py-16 md:py-20 bg-grey-50 rounded-md" id="portfolio">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Check out my Portfolio
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Here's what I have done with the past
-  </h3>
+    <h2
+            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+    >
+        Check out my Portfolio
+    </h2>
+    <h3
+            class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+    >
+        Here's what I have done in the past
+    </h3>
 
 
+    <div id="default-carousel" class="relative max-w-4xl p-12 mx-auto" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-72 md:h-96 overflow-hidden rounded-lg md:h-120">
+            <!-- Item 1 -->
+            <div class="hidden transition-all-4000 duration-5000 ease-in-out" data-carousel-item>
+                <img src="assets/img/localeplates.jpg" class="hidden md:block w-full bg-cover"
+                     alt="https://localeplates.com/">
+                <a href="https://localeplates.com/"
+                   class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-60 p-4 text-white text-center">
+                    <!-- Responsive Text Size -->
+                    <div class="text-xl md:text-2xl mb-3 font-bold">View Project on the Web</div>
+                    <div class="text-sm md:text-lg mb-1">Built with Laravel, TailwindCSS, Vue.js, MongoDB</div>
+                    <div class="text-xs">Source Code is not Available for the Public, contact me personally to get more
+                        details
+                    </div>
+                </a>
+                <div class="md:hidden card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="assets/img/localeplates.jpg" class="w-full" alt="Locale Plates Project">
+                        <a href="https://localeplates.com/"
+                           class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                            <div class="text-center">
+                                <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the
+                                    Web
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg mb-1 font-semibold">Built with Laravel, TailwindCSS, Vue.js, MongoDB</p>
+                        <p class="text-sm">Source Code is not Available for the Public, contact me personally to get
+                            more
+                            details</p>
+                    </div>
+                </div>
+            </div>
 
-  <div id="default-carousel" class="relative max-w-4xl p-12 mx-auto" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-96 overflow-hidden rounded-lg md:h-120">
-      <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="assets/img/portfolio-apple.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 top-0" alt="...">
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="assets/img/portfolio-fedex.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="assets/img/portfolio-microsoft.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="assets/img/portfolio-stripe.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-    </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <!-- Item 2 -->
+            <div class="hidden transition-all-4000 duration-5000 ease-in-out" data-carousel-item>
+                <img src="assets/img/blog.jpg" class="hidden md:block w-full bg-cover" alt="https://mattaco.blog/">
+                <a href="https://mattaco.blog/"
+                   class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-60 p-4 text-white text-center">
+                    <!-- Responsive Text Size -->
+                    <div class="text-xl md:text-2xl mb-2 font-bold">View Project on the Web</div>
+                    <div class="text-md md:text-lg mb-1">Built with Laravel, TailwindCSS, Blade, MySQL</div>
+                </a>
+                <a href="https://github.com/mattacosta311/laravel_laracast"
+                   class="hidden md:block absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-70 hover:bg-opacity-100 p-2 text-white text-center">
+                    <div class="md:tex-lg font-bold hover:underline">Click Here to view the Source Code on Github</div>
+                </a>
+                <div class="md:hidden card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="assets/img/blog.jpg" class="w-full" alt="Blog Project">
+                        <a href="https://mattaco.blog/"
+                           class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                            <div class="text-center">
+                                <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the
+                                    Web
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg mb-1 font-semibold">Built with Laravel, TailwindCSS, Blade, MySQL</p>
+                        <a href="https://github.com/mattacosta311/laravel_laracast"
+                           class="text-sm text-blue-500 hover:underline">View Source Code on Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="hidden transition-all-4000 duration-5000 ease-in-out" data-carousel-item>
+                <img src="assets/img/stock.jpg" class="hidden md:block w-full bg-cover" alt="Stock Tracker App">
+                <a href="https://github.com/mattacosta311/stock-project"
+                   class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 p-4 text-white text-center">
+                    <!-- Responsive Text Size -->
+                    <div class="text-xl md:text-2xl font-bold mb-2">Stock Tracker for Retail Stores</div>
+                    <div class="md:block">View Project's Source Code</div>
+                </a>
+                <div class="md:hidden card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="assets/img/stock.jpg" class="w-full" alt="Stock Tracker App">
+                        <a href="https://github.com/mattacosta311/stock-project"
+                           class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                            <div class="text-center">
+                                <div class="md:text-2xl mb-3 font-bold text-white hover:underline">Stock Tracker for
+                                    Retail
+                                    Stores
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg mb-1 font-semibold">Extensive Feature/Unit Tests with Laravel and MySQL</p>
+                        <a href="https://github.com/mattacosta311/stock-project"
+                           class="text-sm text-blue-500 hover:underline">View Source Code on Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="hidden transition-all-4000 duration-5000 ease-in-out" data-carousel-item>
+                <img src="assets/img/portfolio-stripe.jpeg" class="hidden md:block w-full bg-cover"
+                     alt="https://www.xpertrn.com/">
+                <a href="https://www.xpertrn.com/"
+                   class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-60 p-4 text-white text-center">
+                    <!-- Responsive Text Size -->
+                    <div class="text-xl md:text-2xl mb-2 font-bold">View Project</div>
+                    <div class="text-md md:text-lg font-semibold">Client's needs were met better with a Website
+                        Builder
+                    </div>
+                </a>
+                <div class="md:hidden card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="assets/img/portfolio-stripe.jpeg" class="w-full" alt="Stripe Integration Project">
+                        <a href="https://www.xpertrn.com/"
+                           class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                            <div class="text-center">
+                                <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the
+                                    Web
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg mb-1 font-semibold">Client's needs met with a Website Builder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="z-30 flex space-x-3 -translate-x-1/2 bottom-5 justify-center mt-4">
+            <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-primary" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 1 1 5l4 4"/>
             </svg>
             <span class="sr-only">Previous</span>
         </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        </button>
+        <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4"/>
             </svg>
             <span class="sr-only">Next</span>
         </span>
-    </button>
-  </div>
+        </button>
+    </div>
+    <!-- View All Button -->
+    <div class="flex">
+        <a href="#contact" class="mx-auto">
+            <button id="viewAllBtn" class="p-3 bg-primary text-white rounded">View All
+                Projects
+            </button>
+        </a>
+    </div>
 
 </div>
+<!-- Popup Modal -->
+<div id="popupModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 overflow-y-auto h-full w-full">
+    <button id="closeBtn" class="absolute top-0 right-0 m-3 ">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <div class="relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-white">
+        <!-- Close Button -->
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Card 1 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="assets/img/localeplates.jpg" class="w-full" alt="Locale Plates Project">
+                    <a href="https://localeplates.com/"
+                       class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                        <div class="text-center">
+                            <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the Web
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4">
+                    <p class="text-lg mb-1 font-semibold">Built with Laravel, TailwindCSS, Vue.js, MongoDB</p>
+                    <p class="text-sm">Source Code is not Available for the Public, contact me personally to get more
+                        details</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="assets/img/blog.jpg" class="w-full" alt="Blog Project">
+                    <a href="https://mattaco.blog/"
+                       class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                        <div class="text-center">
+                            <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the Web
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4">
+                    <p class="text-lg mb-1 font-semibold">Built with Laravel, TailwindCSS, Blade, MySQL</p>
+                    <a href="https://github.com/mattacosta311/laravel_laracast"
+                       class="text-sm text-blue-500 hover:underline">View Source Code on Github</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="assets/img/stock.jpg" class="w-full" alt="Stock Tracker App">
+                    <a href="https://github.com/mattacosta311/stock-project"
+                       class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                        <div class="text-center">
+                            <div class="md:text-2xl mb-3 font-bold text-white hover:underline">Stock Tracker for Retail
+                                Stores
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4">
+                    <p class="text-lg mb-1 font-semibold">Extensive Feature/Unit Tests with Laravel and MySQL</p>
+                    <a href="https://github.com/mattacosta311/stock-project"
+                       class="text-sm text-blue-500 hover:underline">View Source Code on Github</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="assets/img/portfolio-stripe.jpeg" class="w-full" alt="Stripe Integration Project">
+                    <a href="https://www.xpertrn.com/"
+                       class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                        <div class="text-center">
+                            <div class="md:text-2xl mb-3 font-bold text-white hover:underline">View Project on the Web
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4">
+                    <p class="text-lg mb-1 font-semibold">Client's needs met with a Website Builder</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="homepageScreenshot.png" class="w-full" alt="My Portfolio">
+                    <a href="https://github.com/mattacosta311/portfolio"
+                       class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center hover:bg-opacity-90">
+                        <div class="text-center">
+                            <div class="md:text-2xl mb-3 font-bold text-white hover:underline">This Website</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4">
+                    <a href="https://github.com/mattacosta311/portfolio" class="text-sm text-blue-500 hover:underline">View
+                        Source Code on Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container py-16 md:py-20" id="contact">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Contact Me
-  </h2>
-  <div class="flex flex-col pt-16 lg:flex-row">
-    <div
-      class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
+    <h2
+            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
     >
-      <div class="flex items-center">
-        <i class="bx bx-phone text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Phone
-        </p>
-      </div>
-      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        (239) 206-7458
-      </p>
+        Contact Me
+    </h2>
+    <div class="flex flex-col pt-16 lg:flex-row">
+        <div
+                class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
+        >
+            <div class="flex items-center">
+                <i class="bx bx-phone text-2xl text-grey-40"></i>
+                <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                    My Phone
+                </p>
+            </div>
+            <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+                (239) 206-7458
+            </p>
+        </div>
+        <div
+                class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+        >
+            <div class="flex items-center">
+                <i class="bx bx-envelope text-2xl text-grey-40"></i>
+                <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                    My Email
+                </p>
+            </div>
+            <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+                mattacosta311@gmail.com
+            </p>
+        </div>
+        <div
+                class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+        >
+            <div class="flex items-center">
+                <i class="bx bx-map text-2xl text-grey-40"></i>
+                <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                    My Address
+                </p>
+            </div>
+            <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+                Naples Fl 34110
+            </p>
+        </div>
     </div>
-    <div
-      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
-    >
-      <div class="flex items-center">
-        <i class="bx bx-envelope text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Email
-        </p>
-      </div>
-      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        mattacosta311@gmail.com
-      </p>
-    </div>
-    <div
-      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
-    >
-      <div class="flex items-center">
-        <i class="bx bx-map text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Address
-        </p>
-      </div>
-      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        Naples Fl 34110
-      </p>
-    </div>
-  </div>
 </div>
 
 <div
-  class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
-  style="background-image: url(/assets/img/map.png)"
+        class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
+        style="background-image: url(/assets/img/map.png)"
 ></div>
 
-      <div class="bg-primary">
-  <div class="container flex flex-col justify-between py-6 sm:flex-row">
-    <a href="/" class="hover:text-yellow text-lg font-bold font-header justify-center text-white">
-      Back to Top
-    </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+<div class="bg-primary">
+    <div class="container flex flex-col justify-between py-6 sm:flex-row">
+        <a href="/" class="hover:text-yellow text-lg font-bold font-header justify-center text-white">
+            Back to Top
+        </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <script src="/assets/js/main.js"></script>
 
 
-    <script> window.onload = function() { // add window.onload here and set it euqal to a function
-      // Get the modal
-      var modal = document.getElementById('img');
-    
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('img');
-      var modalImg = document.getElementById("img");
-      img.onclick = function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-      }
-    
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-    
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-    }
-  
-      </script>
+        <script> window.onload = function () { // add window.onload here and set it euqal to a function
+            // Get the modal
+            var modal = document.getElementById('img');
 
-    
-  </body>
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('img');
+            var modalImg = document.getElementById("img");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+        document.getElementById('viewAllBtn').addEventListener('click', function () {
+            document.getElementById('popupModal').classList.remove('hidden');
+        });
+
+        document.getElementById('closeBtn').addEventListener('click', function () {
+            document.getElementById('popupModal').classList.add('hidden');
+        });
+
+
+        </script>
+
+
+</body>
 </html>
